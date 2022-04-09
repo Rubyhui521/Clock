@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLOCK</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="settings">
+        <i class="fa fa-cog fa-lg"></i>
+        <form class="settings">
+            <h3>SETTINGS</h3>
+            <div>
+                <p>Color Mode</p>
+                <input type="radio" id="dark" name="colorMode" value="Dark Mode">
+                <label for="dark">Dark Mode</label>
+                <input type="radio" id="light" name="colorMode" value="Light Mode">
+                <label for="light">Light Mode</label>
+            </div>
+            <div>
+                <p>Show Date</p>
+                <input type="radio" id="yes" name="showDate" value="Yes">
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="showDate" value="No">
+                <label for="no">No</label>
+            </div>
+            <br>
+            <button id="submit" type="submit" name="submit">SUBMIT</button>
+        </form>
+    </div>
+
+    <h1 id="greeting"></h1>
+    <div id="clock"></div>           
+    
+    <div class="moreInfo">
+        <div class="more" id="more">
+            <div>
+                <h4>Day Of The Year</h4>
+                <p id="dayOfTheYear"></p>
+            </div>
+            <div>
+                <h4>Remain Hours</h4>
+                <p id="remainHours"></p>
+            </div>
+        </div>
+        <button id="button" type="button" name="more">MORE</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

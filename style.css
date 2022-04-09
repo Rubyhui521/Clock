@@ -1,0 +1,130 @@
+/* toggle */
+.settings, .more {
+    display: none;
+    background-color: rgba(2, 62, 115, 0.5);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+.show {
+    display: block;
+    font-size: 20px;
+}
+
+.showMore {
+    display: flex;
+    font-size: 20px;
+}
+
+/* background */
+body {
+    color: aliceblue;
+    font-family: 'Quicksand', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* position */
+#settings {
+    position: fixed;
+    top: 40px;
+    left: 40px;
+}
+
+.moreInfo {
+    position: fixed;
+    bottom: 40px;
+    left: 40px;
+}
+
+/* layout */
+#greeting, #clock, #more {
+    text-align: center;
+}
+
+#greeting {
+    margin: 100px auto 50px auto;
+}
+
+#clock {
+    font-size: 30px;
+}
+
+.settings h3, .settings div {
+    margin-bottom: 40px;
+}
+
+.settings button, #button {
+    font-size: 15px;
+    text-align: center;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.more div {
+    margin: 20px;
+}
+
+@media (max-width: 500px) {
+    .settings, .more {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding: 12px;
+    }
+    
+    .show, .showMore {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .settings, .more {
+        margin-top: 7px;
+        margin-bottom: 7px;
+        padding: 15px;
+    }
+    
+    .show, .showMore {
+        font-size: 15px;
+    }
+
+    /* position */
+    #settings {
+        position: fixed;
+        top: 30px;
+        left: 30px;
+    }
+
+    .moreInfo {
+        position: fixed;
+        bottom: 30px;
+        left: 30px;
+    }
+
+    /* layout */
+    #greeting {
+        margin: 70px auto 30px auto;
+    }
+    
+    #clock {
+        font-size: 20px;
+    }
+    
+    .settings h3, .settings div {
+        margin-bottom: 30px;
+    }
+    
+    .settings button, #button {
+        font-size: 12px;
+        text-align: center;
+        padding: 5px;
+        border: none;
+        border-radius: 3px;
+    }
+    
+    .more div {
+        margin: 15px;
+    }
+}
